@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="twelve columns">
+		<h1 id="bah">Update Blog</h1>
+		<form id="thisform">
+      <input type="hidden" name="_id" value="{{_id}}" />
+      <label>{{_id}}</label>
+      <label>Comment</label>
+      {{view Ember.TextArea valueBinding="comment" id="comment" name="comment" size="25"  class="required" width="100"}}
+      <a class="button" {{action "onSubmit" target="controller"}}>save</a>
+		</form>	
+		<a {{action goToBlogs href=true}}>Blogs</a>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="three columns">
+		{{outlet submenu}}
+	</div>
+	<div class="nine columns">
+    	{{#view App.MyView}}
+      		<h1>Hello zorld!</h1>
+    	{{/view}}
+      <p {{bindAttr class="isSlogan"}} >Ember is: {{slogan}}</p>
+		<dl class="tabs three-up">
+  			<dd class="active"><a href="#evenTab1">Even Tab 1</a></dd>
+  			<dd><a href="#evenTab2">Even Tab 2</a></dd>
+  			<dd><a href="#evenTab3">Even Tab 3</a></dd>
+		</dl>
+	</div>
+</div>

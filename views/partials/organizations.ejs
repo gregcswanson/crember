@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="twelve columns">
+    <h1>Blogs</h1>
+    <a {{action showAddBlog href=true}}>add</a>
+    <p>
+    {{#each item in controller}}
+        <li>
+        <a {{action "deleteBlog" item target="controller" href=true}}>delete</a> | 
+        <a {{action showBlog item href=true}}>open</a> | 
+        <a {{action showEditBlog item href=true}}>edit</a> | 
+        {{item.comment}}</li>
+    {{/each}}
+  </p>
+  </div>
+</div>
