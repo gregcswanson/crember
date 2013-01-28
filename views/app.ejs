@@ -11,15 +11,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/stylesheets/ember/style.css">
+    <!-- <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
+    <link rel="stylesheet" href="/stylesheets/ember/style.css"> -->
     <link href="/stylesheets/foundation/app.css" rel="stylesheet">
     <link href="/stylesheets/foundation/foundation.min.css" rel="stylesheet">
   	<link rel="stylesheet" href="/fonts/general_foundicons.css">
   	<link rel="stylesheet" href="/stylesheets/style.css"/>
 
-  	<script src="/javascripts/foundation/modernizr.foundation.js"></script>
+  	<script src="/javascripts/vendor/foundation/modernizr.foundation.js"></script>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,52 +27,43 @@
 </head>
 <body>
 	<script type="text/x-handlebars" data-template-name="application">	
-		<% include partials/app/app %>
+		<% include partials/app %>
 	</script>
   <script type="text/x-handlebars" data-template-name="index">  
-    <% include partials/app/index %>
+    <% include partials/index %>
   </script>
-  <script type="text/x-handlebars" data-template-name="submenu">  
-    <% include partials/app/submenu %>
-  </script>
-  <script type="text/x-handlebars" data-template-name="tour">  
-    <% include partials/app/tour %>
-  </script>
-  <script type="text/x-handlebars" data-template-name="blogs">  
-    <% include partials/app/blogs %>
-  </script>
-  <script type="text/x-handlebars" data-template-name="blog">  
-    <% include partials/app/blog %>
-  </script>
-  <script type="text/x-handlebars" data-template-name="blogadd">  
-    <% include partials/app/blogadd %>
-  </script>
-  <script type="text/x-handlebars" data-template-name="blogedit">  
-    <% include partials/app/blogedit %>
+  <script type="text/x-handlebars" data-template-name="profile">  
+    <% include partials/profile %>
   </script>
   <script type="text/x-handlebars" data-template-name="about">  
-    <% include partials/app/about %>
+    <% include partials/about %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="aboutContact">  
+    <% include partials/aboutContact %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="aboutIndex">  
+    <% include partials/aboutIndex %>
   </script>
   <script type="text/x-handlebars" data-template-name="footer">  
-    <% include partials/app/footer %>
+    <% include partials/footer %>
   </script>
    
-  <script src="/javascripts/ember2/jquery.min.js"></script>
-  <script src="/javascripts/foundation/foundation.min.js"></script>
-  <script src="/javascripts/foundation/app.js"></script>
+  <script src="/javascripts/vendor/ember/jquery.js"></script>
+  <script src="/javascripts/vendor/foundation/foundation.min.js"></script>
+  <script src="/javascripts/vendor/foundation/app.js"></script>
   		
-  <script src="/javascripts/ember2/handlebars.js"></script>
-  <script src="/javascripts/ember2/ember.js"></script>
-  <script src="/javascripts/ember2/ember-data.js"></script>
-  <script src="/javascripts/ember2/jquery.validate.min.js"></script>
-  <script src="/javascripts/ember2/app-start.js"></script>
-  <script src="/javascripts/ember2/app-routes.js"></script>
-  <script src="/javascripts/ember2/app-views.js"></script>
-  <script src="/javascripts/ember2/app-views-extended.js"></script>
-  <script src="/javascripts/ember2/app-controllers.js"></script>
-  <script src="/javascripts/ember2/app-models.js"></script>
-  <script src="/javascripts/ember2/app-data.js"></script>
-  <script src="/javascripts/ember2/app-utilities.js"></script>
-  <script src="/javascripts/ember2/app-run.js"></script>
+  <script src="/javascripts/vendor/ember/handlebars.js"></script>
+  <script src="/javascripts/vendor/ember/ember-0-4.js"></script>
+  <script src="/javascripts/vendor/ember/ember-data.js"></script>
+  <script src="/javascripts/vendor/ember/jquery.validate.min.js"></script>
+  <script src="/javascripts/app-start.js"></script>
+  <script src="/javascripts/app-routes.js"></script>
+  <script src="/javascripts/app-views.js"></script>
+  <script src="/javascripts/app-views-extended.js"></script>
+  <script src="/javascripts/app-controllers.js"></script>
+  <script src="/javascripts/app-models.js"></script>
+  <script src="/javascripts/app-data.js"></script>
+  <!-- <script src="/javascripts/ember2/app-utilities.js"></script>
+  <script src="/javascripts/ember2/app-run.js"></script> -->
 </body>
 </html>

@@ -1,14 +1,11 @@
 <div class="row">
 	<div class="twelve columns">
     <h1>About</h1>
-    {{#if abouts.isLoaded}}
-    	<ul>
-    	{{#each about in abouts}}
-        	<li>{{about.name}}</li>
-    	{{/each}}
-    	</ul>
-	{{else}}
-		<p class="loading">Loading Hours</p>
-	{{/if}}
 	</div>
 </div>
+<div class="row">
+	<div class="twelve columns">
+		{{#linkTo "about.index"}}company{{/linkTo}}|{{#linkTo "about.contact"}}contact{{/linkTo}}
+	</div>
+</div>
+{{outlet}}

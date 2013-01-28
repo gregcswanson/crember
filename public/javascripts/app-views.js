@@ -3,15 +3,15 @@ App.ApplicationView = Ember.View.extend({
     classNames: ['application-view']
 });
 
-App.HomeView =  Ember.View.extend({
-    templateName:  'index',
-    mouseDown: function() {
-      	this.controller.set('slogan','changed');
+//App.HomeView =  Ember.View.extend({
+  //  templateName:  'index'//,
+    //mouseDown: function() {
+      	//this.controller.set('slogan','changed');
       	//App.container.lookup('router:main').router
       	//App.container.lookup('controller:home')
-    }
-});
+    //}
+//});
 
-App.FooterView =  Em.View.extend({
-    templateName:  'footer'
-});
+//App.FooterView =  Em.View.extend({
+//    templateName:  'footer'
+//});

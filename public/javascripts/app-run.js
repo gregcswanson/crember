@@ -1,1 +1,1 @@
-App.initialize();
+//App.initialize();

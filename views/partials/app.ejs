@@ -3,7 +3,7 @@
 		<!-- Title Area -->
 		<li class="name">
 			<h1>
-				<a href="#">The App</a>
+				{{#linkTo "index"}}Cr Ember{{/linkTo}}
         	</h1>
       	</li>
 		<li class="toggle-topbar"><a href="#"></a></li>
@@ -13,13 +13,14 @@
       	<!-- Right Nav Section -->
       	<ul class="right">
         	<li class="divider"></li>
-        	<li><a {{action goToIndex href=true}}>home</a></li>
+        	<li>{{#linkTo "index"}}home{{/linkTo}}</li>
         	<li class="divider"></li>
-          <li><a {{action goToTour href=true}}>tour</a></li>
-          <li class="divider"></li>
-          <li><a {{action goToBlogs href=true}}>blog</a></li>
-          <li class="divider"></li>
-        	<li><a {{action goToAbout href=true}}>about</a></li>
+        	<li>{{#linkTo "profile"}}profile{{/linkTo}}</li>
+        	<li class="divider"></li>
+          	<li>{{#linkTo "about"}}about{{/linkTo}}</li>
+          	<li class="divider"></li>
+          	<li><img {{bindAttr src="profile.gravatar"}} alt="user"></li>
+          	<li class="divider"></li>
         	<li class="has-button">
             	<a class="small button" href="/login">sign out</a>
           	</li>
@@ -27,5 +28,4 @@
 	</section>
 </nav>
 {{outlet}}
-{{outlet footer}}
-{{outlet dialog}}
+{{render footer}}
