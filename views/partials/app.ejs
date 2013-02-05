@@ -1,0 +1,31 @@
+<nav class="top-bar">
+	<ul>
+		<!-- Title Area -->
+		<li class="name">
+			<h1>
+				{{#linkTo "index"}}Cr Ember{{/linkTo}}
+        	</h1>
+      	</li>
+		<li class="toggle-topbar"><a href="#"></a></li>
+	</ul>
+
+	<section>
+      	<!-- Right Nav Section -->
+      	<ul class="right">
+        	<li class="divider"></li>
+        	<li>{{#linkTo "index"}}home{{/linkTo}}</li>
+        	<li class="divider"></li>
+        	<li>{{#linkTo "profile"}}profile{{/linkTo}}</li>
+        	<li class="divider"></li>
+          	<li>{{#linkTo "about"}}about{{/linkTo}}</li>
+          	<li class="divider"></li>
+          	<li><img {{bindAttr src="profile.gravatar"}} alt="user"></li>
+          	<li class="divider"></li>
+        	<li class="has-button">
+            	<a class="small button" href="/login">sign out</a>
+          	</li>
+      	</ul>
+	</section>
+</nav>
+{{outlet}}
+{{render footer}}

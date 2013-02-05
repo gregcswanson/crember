@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title><%= title %></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
+    <link rel="stylesheet" href="/stylesheets/ember/style.css"> -->
+    <link href="/stylesheets/foundation/app.css" rel="stylesheet">
+    <link href="/stylesheets/foundation/foundation.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="/fonts/general_foundicons.css">
+  	<link rel="stylesheet" href="/stylesheets/style.css"/>
+
+  	<script src="/javascripts/vendor/foundation/modernizr.foundation.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<script type="text/x-handlebars" data-template-name="application">	
+		<% include partials/app %>
+	</script>
+  <script type="text/x-handlebars" data-template-name="index">  
+    <% include partials/index %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="profile">  
+    <% include partials/profile %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="about">  
+    <% include partials/about %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="aboutContact">  
+    <% include partials/aboutContact %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="aboutIndex">  
+    <% include partials/aboutIndex %>
+  </script>
+  <script type="text/x-handlebars" data-template-name="footer">  
+    <% include partials/footer %>
+  </script>
+   
+  <script src="/javascripts/vendor/ember/jquery.js"></script>
+  <script src="/javascripts/vendor/foundation/foundation.min.js"></script>
+  <script src="/javascripts/vendor/foundation/app.js"></script>
+  		
+  <script src="/javascripts/vendor/ember/handlebars.js"></script>
+  <script src="/javascripts/vendor/ember/ember-0-4.js"></script>
+  <script src="/javascripts/vendor/ember/ember-data.js"></script>
+  <script src="/javascripts/vendor/ember/jquery.validate.min.js"></script>
+  <script src="/javascripts/app-start.js"></script>
+  <script src="/javascripts/app-routes.js"></script>
+  <script src="/javascripts/app-views.js"></script>
+  <script src="/javascripts/app-views-extended.js"></script>
+  <script src="/javascripts/app-controllers.js"></script>
+  <script src="/javascripts/app-models.js"></script>
+  <script src="/javascripts/app-data.js"></script>
+  <!-- <script src="/javascripts/ember2/app-utilities.js"></script>
+  <script src="/javascripts/ember2/app-run.js"></script> -->
+</body>
+</html>
